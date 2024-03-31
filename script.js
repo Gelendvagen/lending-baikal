@@ -4,14 +4,14 @@ function Sim(sldrId) {
 		this.sldrRoot = id
 	}
 	else {
-		this.sldrRoot = document.querySelector('.sim-slider')
+		this.sldrRoot = document.querySelector('.slider')
 	};
-	this.sldrList = this.sldrRoot.querySelector('.sim-slider-list');
-	this.sldrElements = this.sldrList.querySelectorAll('.sim-slider-element');
-	this.sldrElemFirst = this.sldrList.querySelector('.sim-slider-element');
-	this.leftArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-left');
-	this.rightArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-right');
-	this.indicatorDots = this.sldrRoot.querySelector('div.sim-slider-dots');
+	this.sldrList = this.sldrRoot.querySelector('.slider-list');
+	this.sldrElements = this.sldrList.querySelectorAll('.slider-element');
+	this.sldrElemFirst = this.sldrList.querySelector('.slider-element');
+	this.leftArrow = this.sldrRoot.querySelector('div.slider-arrow-left');
+	this.rightArrow = this.sldrRoot.querySelector('div.slider-arrow-right');
+	this.indicatorDots = this.sldrRoot.querySelector('div.slider-dots');
 	this.options = Sim.defaults;
 	Sim.initialize(this)
 };
