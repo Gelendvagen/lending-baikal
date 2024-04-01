@@ -9,8 +9,8 @@ function Sim(sldrId) {
 	this.sldrList = this.sldrRoot.querySelector('.slider-list');
 	this.sldrElements = this.sldrList.querySelectorAll('.slider-element');
 	this.sldrElemFirst = this.sldrList.querySelector('.slider-element');
-	this.leftArrow = this.sldrRoot.querySelector('div.slider-arrow-left');
-	this.rightArrow = this.sldrRoot.querySelector('div.slider-arrow-right');
+	this.leftBtn = this.sldrRoot.querySelector('div.slider-btn-left');
+	this.rightBtn = this.sldrRoot.querySelector('div.slider-btn-right');
 	this.indicatorDots = this.sldrRoot.querySelector('div.slider-dots');
 	this.options = Sim.defaults;
 	Sim.initialize(this)
@@ -33,9 +33,9 @@ Sim.prototype.elemPrev = function(num) {
 
 	if(!this.options.loop) {
 		if(this.currentElement == 0) {
-			this.leftArrow.style.display = 'none'
+			this.leftBtn.style.display = 'none'
 		};
-		this.rightArrow.style.display = 'block'
+		this.rightBtn.style.display = 'block'
 	};
 	
 	this.sldrElements[this.currentElement].style.opacity = '1';
@@ -55,9 +55,9 @@ Sim.prototype.elemNext = function(num) {
 
 	if(!this.options.loop) {
 		if(this.currentElement == this.elemCount-1) {
-			this.rightArrow.style.display = 'none'
+			this.rightBtn.style.display = 'none'
 		};
-		this.leftArrow.style.display = 'block'
+		this.leftBtn.style.display = 'block'
 	};
 
 	this.sldrElements[this.currentElement].style.opacity = '1';
@@ -95,14 +95,14 @@ Sim.initialize = function(that) {
 
 	if(that.elemCount <= 1) {
 		that.options.auto = false; that.options.arrows = false; that.options.dots = false;
-		that.leftArrow.style.display = 'none'; that.rightArrow.style.display = 'none'
+		that.leftBtn.style.display = 'none'; that.rightBtn.style.display = 'none'
 	};
 	if(that.elemCount >= 1) {
 		that.sldrElemFirst.style.opacity = '1';
 	};
 
 	if(!that.options.loop) {
-		that.leftArrow.style.display = 'none';
+		that.leftBtn.style.display = 'none';
 		that.options.auto = false;
 	}
 	else if(that.options.auto) {
@@ -112,13 +112,13 @@ Sim.initialize = function(that) {
 	};
 
 	if(that.options.arrows) {
-		that.leftArrow.addEventListener('click', function() {
+		that.leftBtn.addEventListener('click', function() {
 			let fnTime = getTime();
 			if(fnTime - bgTime > 1000) {
 				bgTime = fnTime; that.elemPrev()
 			}
 		}, false);
-		that.rightArrow.addEventListener('click', function() {
+		that.rightBtn.addEventListener('click', function() {
 			let fnTime = getTime();
 			if(fnTime - bgTime > 1000) {
 				bgTime = fnTime; that.elemNext()
@@ -126,16 +126,16 @@ Sim.initialize = function(that) {
 		}, false)
 	}
 	else {
-		that.leftArrow.style.display = 'none'; that.rightArrow.style.display = 'none'
+		that.leftBtn.style.display = 'none'; that.rightBtn.style.display = 'none'
 	};
 
 	if(that.options.dots) {
 		let sum = '', diffNum;
 		for(let i=0; i<that.elemCount; i++) {
-			sum += '<span class="sim-dot"></span>'
+			sum += '<span class="sld-dot"></span>'
 		};
 		that.indicatorDots.innerHTML = sum;
-		that.indicatorDotsAll = that.sldrRoot.querySelectorAll('span.sim-dot');
+		that.indicatorDotsAll = that.sldrRoot.querySelectorAll('span.sld-dot');
 		for(let n=0; n<that.elemCount; n++) {
 			that.indicatorDotsAll[n].addEventListener('click', function() {
 				diffNum = Math.abs(n - that.currentElement);
