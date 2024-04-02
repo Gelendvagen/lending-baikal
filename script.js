@@ -153,5 +153,53 @@ Sim.initialize = function(that) {
 		}
 	}
 };
-
 new Sim();
+
+
+function changeImage(img) {
+    if (img.classList.contains('num-1')) {
+        img.src = 'img/numbers/1-hover.png';
+    } else if (img.classList.contains('num-2')) {
+        img.src = 'img/numbers/2-hover.png';
+    } else if (img.classList.contains('num-3')) {
+        img.src = 'img/numbers/3-hover.png';
+    } else if (img.classList.contains('num-4')) {
+        img.src = 'img/numbers/4-hover.png';
+    } else if (img.classList.contains('num-5')) {
+        img.src = 'img/numbers/5-hover.png';
+    } else if (img.classList.contains('num-6')) {
+        img.src = 'img/numbers/6-hover.png';
+    } else if (img.classList.contains('num-7')) {
+        img.src = 'img/numbers/7-hover.png';
+    } else if (img.classList.contains('num-8')) {
+        img.src = 'img/numbers/8-hover.png';
+    } else if (img.classList.contains('num-9')) {
+        img.src = 'img/numbers/9-hover.png';
+    } else if (img.classList.contains('num-10')) {
+        img.src = 'img/numbers/10-hover.png';
+    }
+}
+
+function restoreImage(img) {
+    if (img.classList.contains('num-1')) {
+        img.src = 'img/numbers/1.png';
+    } else if (img.classList.contains('num-2')) {
+        img.src = 'img/numbers/2.png';
+    } else if (img.classList.contains('num-3')) {
+        img.src = 'img/numbers/3.png';
+    } else if (img.classList.contains('num-4')) {
+        img.src = 'img/numbers/4.png';
+    } else if (img.classList.contains('num-5')) {
+        img.src = 'img/numbers/5.png';
+    } else if (img.classList.contains('num-6')) {
+        img.src = 'img/numbers/6.png';
+    } else if (img.classList.contains('num-7')) {
+        img.src = 'img/numbers/7.png';
+    } else if (img.classList.contains('num-8')) {
+        img.src = 'img/numbers/8.png';
+    } else if (img.classList.contains('num-9')) {
+        img.src = 'img/numbers/9.png';
+    } else if (img.classList.contains('num-10')) {
+        img.src = 'img/numbers/10.png';
+    }
+}
