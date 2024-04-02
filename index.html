@@ -5,9 +5,9 @@
     <title>lending-baikal</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open%20Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open%20Sans:wght@200;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="first-block">
@@ -105,6 +105,93 @@
             <img src="img/numbers/10.png" class="num-10" onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
         </div>
     </div>
-
+    <div class="fifth-block">
+        <hr>
+        <img src="img/programma.png" class="img-4">
+        <p class="text-5-1">программа</p>
+        <div class="programma">
+            <div class="programma-1">
+                <img src="img/programma-1.png" class="programma-img-1">
+                <p class="programma-maintext-1">01</p>
+                <p class="programma-text-1">Покатаетесь на коньках по Байкалу.<br>
+                    Зимой Байкал — самый большой каток<br>
+                    в мире. Предлагаем вам кататься<br>
+                    на коньках на стоянках и в свободное<br>
+                    время, это незабываемое ощущение!</p>
+            </div>
+            <img src="img/programma-linia.png" class="programma-linia">
+            <div class="programma-2">
+                <img src="img/programma-2.png" class="programma-img-2">
+                <p class="programma-maintext-2">02</p>
+                <p class="programma-text-2">Пройдёте пешком вокруг Ольхона —<br>
+                    это большой и интересный остров.<br>
+                    Именно здесь самый красивый<br>
+                    прозрачный лёд. Каждый день вы будете<br>
+                    видеть новые места.</p>
+            </div>
+            <div class="programma-3">
+                <img src="img/programma-3.png" class="programma-img-3">
+                <p class="programma-maintext-3">03</p>
+                <p class="programma-text-3">Увидите нерпу — мы знаем,<br>
+                    где она любит проводить время на льду.</p>
+            </div>
+            <div class="programma-4">
+                <img src="img/programma-4.png" class="programma-img-4">
+                <p class="programma-maintext-4">04</p>
+                <p class="programma-text-4">Совершите восхождение на высшую<br>
+                    точку острова Ольхон — гора Жима.</p>
+            </div>
+        </div>
+    </div>
+    <div class="sixth-block">
+        <img src="img/price.png" class="img-5">
+        <p class="text-6-1">35 000 ₽</p>
+        <div class="info-price">
+            <div class="list-info-price-1">
+                <p class="text-6-2">В стоимость включено:</p>
+                <ul class="info-price-1">
+                    <li>трансфер г. Иркутск – пос. МРС – г. Иркутск;</li>
+                    <li>гид-проводник;</li>
+                    <li>проживание в зимней палатке с печкой<br>или в отдельных 2-3-местных палатках (на выбор);</li>
+                    <li>размещение в гостевом доме в пос. Сахюрта,<br>пос. Хужир и на метеостанции Узуры;</li>
+                    <li>питание костровое;</li>
+                    <li>аренда снаряжения (палатки, костровое снаряжение, сани-волокуши).</li>
+                </ul>
+            </div>
+            <div class="list-info-price-2">
+                <p class="text-6-3">Дополнительно оплачивается:</p>
+                <ul class="info-price-2">
+                    <li>аренда ледоходов;</li>
+                    <li>питание в кафе во время трансфера;</li>
+                    <li>баня (по желанию).</li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-6-4">* Если у вас есть своя палатка и необходимое снаряжение, то сообщите нам, и мы пересчитаем стоимость тура индивидуально.</p>
+    </div>
+    <div class="seventh-block">
+        <img src="img/input-img.png" class="img-7">
+        <p class="text-7-1">Хотите<br>на Байкал?</p>
+        <p class="text-7-2">Заполните заявку и мы свяжемся с Вами</p>
+        <form id="sendForm">
+            <input type="text" id="name" name="name" placeholder="Имя">
+            <input type="text" id="phone" name="phone" placeholder="Телефон">
+            <input type="email" id="email" name="email" placeholder="Email">
+            <textarea id="comment" name="comment" placeholder="Комментарий"></textarea>
+            <button type="submit">Пора в поход</button>
+        </form>
+        <img src="img/input-img-2.png" class="img-8">
+    </div>
+    <footer class="footer">
+        <img src="img/logo-img-2.png" class="logo-img-2" alt="Логотип">
+        <div class="copyright">ООО Пора в поход &copy; 2023</div>
+        <div class="img-icons">
+            <img src="img/inst-icon.png" class="inst" alt="Инстаграмм">
+            <img src="img/email-icon.png" class="email" alt="Почта">
+            <img src="img/vk-icon.png" class="vk" alt="Вконтакте">
+            <br>
+            <div class="phone">+78005553535</div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -203,3 +203,10 @@ function restoreImage(img) {
         img.src = 'img/numbers/10.png';
     }
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("sendForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+    });
+})
