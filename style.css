@@ -587,7 +587,7 @@ form {
 
 input,
 textarea,
-button {
+.btn-form {
     border-radius: 50px;
     background-color: #ABAEB4;
     padding: 5px;
@@ -624,7 +624,7 @@ textarea::placeholder {
     padding-top: 13px;
 }
 
-button {
+.btn-form {
     color: black;
     background-color: white;
     font-family: 'Manrope';
@@ -634,7 +634,7 @@ button {
     font-size: 25px;
 }
 
-button:hover {
+.btn-form:hover {
     background-color: #4C8891;
 }
 
