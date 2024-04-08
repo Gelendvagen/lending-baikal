@@ -1,4 +1,429 @@
-/*для экранов с шириной ДО 1140px */
-@media (max-width: 1140px) {
+@media only screen and (max-width: 1540px) {
+    .navigator {
+        width: 1519px;
+        height: 85px;
+    }
+
+    .logo {
+        width: 110px;
+        height: 45px;
+        margin: 20px 0 0 65px;
+    }
+
+    .menu {
+        margin: -35px 0 50px 750px;
+    }
+
+    a {
+        font-size: 15px;
+    }
+
+    .header-btn {
+        font-size: 13px;
+        width: 150px;
+        height: 40px;
+        margin: -79px 0 0 1350px;
+        padding: 10px 0 0 12px;
+    }
+
+    .block-main {
+        width: 1519px;
+        height: 630px;
+    }
+
+    .main-text {
+        font-size: 120px;
+        margin: 50px 0 0 290px;
+        line-height: 155px;
+    }
+
+    .main-btn {
+        font-size: 19px;
+        width: 215px;
+        height: 38px;
+        margin: 550px 0 0 -550px;
+    }
+
+    hr {
+        margin-top: 90px;
+    }
+
+    .img-1 {
+        width: 105px;
+        height: 105px;
+        margin: 40px 0 0 155px;
+    }
+
+    .text-2-1 {
+        font-size: 28px;
+        margin: -75px 0 0 285px;
+    }
+
+    .text-2-2 {
+        font-size: 25px;
+        margin: 105px 0 0 155px;
+    }
+
+    img {
+        width: 1520px;
+        height: 730px;
+    }
+
+    .slider {
+        margin: 130px 0 0 -10px;
+    }
+
+    div.slider-btn-left img,
+    div.slider-btn-right img {
+        width: 80px;
+        height: 80px;
+    }
+
+    div.slider-btn-left {
+        margin: 350px 0 0 130px;
+    }
+
+    div.slider-btn-right {
+        margin: 350px 0 0 1330px;
+    }
+
+    div.slider-dots {
+        margin-top: 630px;
+    }
+
+    span.sld-dot {
+        width: 35px;
+        height: 35px;
+    }
+
+    .img-2 {
+        width: 105px;
+        height: 105px;
+        margin: 830px 0 0 155px;
+    }
+
+    .text-3-1 {
+        font-size: 28px;
+        margin: -75px 0 0 285px;
+    }
+
+    .info-img-1,
+    .info-img-2,
+    .info-img-3,
+    .info-img-4 {
+    width: 565px;
+    height: 335px;
+    margin: 55px 155px 60px 185px;
+    }
+
+    .info-maintext-1,
+    .info-maintext-2,
+    .info-maintext-4,
+    .info-maintext-6 {
+    font-size: 24px;
+    }
+
+    .info-maintext-1 {
+        padding-top: 75px;
+    }
+
+    .info-maintext-2 {
+        padding-top: 240px;
+    }
     
+    .info-maintext-3 {
+        padding-top: 220px;
+    }
+
+    .info-maintext-4 {
+        padding-top: 310px;
+    }
+
+    .info-text-1,
+    .info-text-2,
+    .info-text-3,
+    .info-text-4 {
+        font-size: 18px;
+    }
+
+    .fourth-block {
+        background-image: url('img/background-img(1540px).png');
+        width: 1519px;
+        height: 750px;
+        margin-top: 305px;
+    }
+
+    .img-3 {
+        width: 105px;
+        height: 105px;
+        margin: 80px 0 0 155px;
+    }
+
+    .text-4-1 {
+        font-size: 28px;
+        margin: -65px 0 0 300px;
+    }
+
+    .text-4-2 {
+        font-size: 25px;
+        margin: 80px 0 0 155px;
+    }
+    
+    .text-4-3 {
+        font-size: 22px;
+        margin: 25px 0 0 155px;
+    }
+
+    .img-marsh-1 {
+        width: 845px;
+        height: 715px;
+        margin: -280px 0 0 440px;
+    }
+    
+    .img-marsh-2 {
+        width: 900px;
+        height: 655px;
+        margin: -660px 0 0 340px;
+    }
+
+    .numbers img {
+        width: 45px;
+        height: 40px;
+    }
+    
+    .num-1 {
+        margin: -30px 0 0 300px;
+    }
+    
+    .num-2 {
+        margin: -260px 0 0 640px;
+    }
+    
+    .num-3 {
+        margin: -180px 0 0 900px;
+    }
+    
+    .num-4 {
+        margin: -340px 0 0 1210px;
+    }
+    
+    .num-5 {
+        margin: 170px 0 0 1165px;
+    }
+    
+    .num-6 {
+        margin: 40px 0 0 1070px;
+    }
+    
+    .num-7 {
+        margin: 5px 0 0 1010px;
+    }
+    
+    .num-8 {
+        margin: 50px 0 0 910px;
+    }
+    
+    .num-9 {
+        margin: 50px 0 0 810px;
+    }
+    
+    .num-10 {
+        margin: 20px 0 0 580px;
+    }
+
+    .img-4 {
+        width: 105px;
+        height: 105px;
+        margin: 70px 0 0 155px;
+    }
+
+    .text-5-1 {
+        font-size: 28px;
+        margin: -75px 0 0 285px;
+    }
+
+    .programma-img-1,
+    .programma-img-2,
+    .programma-img-3,
+    .programma-img-4 {
+        width: 565px;
+        height: 335px;
+        margin: 55px 155px 60px 185px;
+    }
+
+    .programma-maintext-1,
+    .programma-maintext-2,
+    .programma-maintext-3,
+    .programma-maintext-4 {
+        font-size: 70px;
+    }
+
+    .programma-maintext-1 {
+        padding-top: 60px;
+        padding-left: 155px;
+    }
+    
+    .programma-maintext-2 {
+        padding-top: 140px;
+    }
+    
+    .programma-maintext-3 {
+        padding-top: 150px;
+        padding-left: 155px;
+    }
+    
+    .programma-maintext-4 {
+        padding-top: 220px;
+    }
+
+    .programma-text-1,
+    .programma-text-2,
+    .programma-text-3,
+    .programma-text-4 {
+        font-size: 18px;
+        margin: -60px 0 0 155px;
+    }
+
+    .programma-linia {
+        width: 800px;
+        height: 1150px;
+        margin: 0 0 0 400px;
+    }
+
+    .sixth-block {
+        width: 1519px;
+        height: 730px;
+        margin: 350px 0 0 -9px;
+    }
+
+    .img-5 {
+        width: 105px;
+        height: 105px;
+        margin: 55px 0 0 155px;
+    }
+
+    .text-6-1 {
+        font-size: 28px;
+        margin: -75px 0 0 285px;
+    }
+
+    .info-price {
+        width: 87%;
+    }
+    
+    .text-6-2 {
+        font-size: 24px;
+        margin: 100px 0 0 155px;
+    }
+
+    .info-price-1 {
+        font-size: 20px;
+        margin: 30px 0 0 145px;
+    }
+
+    .text-6-3 {
+        font-size: 24px;
+        margin: 100px 0 0 0;
+    }
+    
+    .info-price-2 {
+        font-size: 20px;
+        margin: 30px 0 0 -10px;
+    }
+
+    .text-6-4 {
+        font-size: 20px;
+        margin: 140px 0 0 155px;
+    }
+
+    .seventh-block {
+        background-image: url('img/background-img-2(1540px).png');
+        width: 1519px;
+        height: 650px;
+    }
+
+    .img-7 {
+        width: 80px;
+        height: 100px;
+        margin: 50px 0 0 280px;
+    }
+
+    .text-7-1 {
+        font-size: 28px;
+        margin: -90px 0 0 410px;
+    }
+
+    .text-7-2 {
+        font-size: 24px;
+        margin: 40px 0 0 280px;
+    }
+
+    form {
+        margin: 40px 0 0 280px;
+    }
+
+    input,
+    textarea {
+        width: 305px;
+        height: 40px;
+    }
+
+    textarea::placeholder {
+        padding-top: 8px;
+    }
+
+    .btn-form {
+        width: 320px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .img-8 {
+        width: 465px;
+        height: 405px;
+        margin: -460px 0 0 850px;
+    }
+
+    .footer {
+        width: 1519px;
+        height: 170px;
+    }
+
+    .logo-img-2 {
+        width: 125px;
+        height: 55px;
+        margin: 60px 0 0 165px;
+    }
+
+    .copyright {
+        font-size: 21px;
+        margin: 75px 0 0 -300px;
+    }
+
+    .img-icons {
+        margin-right: 185px;
+        margin-top: 50px;
+    }
+
+    .inst {
+        width: 30px;
+        height: 30px;
+        margin-right: 25px;
+    }
+    
+    .email {
+        width: 40px;
+        height: 30px;
+        margin-right: 25px;
+    }
+    
+    .vk {
+        width: 50px;
+        height: 30px;
+    }
+    
+    .phone {
+        font-size: 21px;
+        margin: 17px 0 0 15px;
+    }
 }
